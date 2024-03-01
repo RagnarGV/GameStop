@@ -1,0 +1,596 @@
+"use strict";
+(self["webpackChunkGameStop"] = self["webpackChunkGameStop"] || []).push([["main"],{
+
+/***/ 1410:
+/*!************************************************!*\
+  !*** ./src/app/about-us/about-us.component.ts ***!
+  \************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "AboutUsComponent": () => (/* binding */ AboutUsComponent)
+/* harmony export */ });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 2560);
+
+class AboutUsComponent {}
+AboutUsComponent.ɵfac = function AboutUsComponent_Factory(t) {
+  return new (t || AboutUsComponent)();
+};
+AboutUsComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
+  type: AboutUsComponent,
+  selectors: [["app-about-us"]],
+  decls: 2,
+  vars: 0,
+  template: function AboutUsComponent_Template(rf, ctx) {
+    if (rf & 1) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "p");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "about-us works!");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    }
+  },
+  styles: ["\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsInNvdXJjZVJvb3QiOiIifQ== */"]
+});
+
+/***/ }),
+
+/***/ 158:
+/*!***************************************!*\
+  !*** ./src/app/app-routing.module.ts ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "AppRoutingModule": () => (/* binding */ AppRoutingModule)
+/* harmony export */ });
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/router */ 124);
+/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./home/home.component */ 5067);
+/* harmony import */ var _about_us_about_us_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./about-us/about-us.component */ 1410);
+/* harmony import */ var _contact_contact_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./contact/contact.component */ 1563);
+/* harmony import */ var _games_list_games_list_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./games-list/games-list.component */ 9771);
+/* harmony import */ var _game_details_game_details_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./game-details/game-details.component */ 2408);
+/* harmony import */ var _categories_categories_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./categories/categories.component */ 1224);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/core */ 2560);
+
+
+
+
+
+
+
+
+
+const routes = [{
+  path: 'home',
+  component: _home_home_component__WEBPACK_IMPORTED_MODULE_0__.HomeComponent
+}, {
+  path: 'contact',
+  component: _contact_contact_component__WEBPACK_IMPORTED_MODULE_2__.ContactComponent
+}, {
+  path: 'categories',
+  component: _categories_categories_component__WEBPACK_IMPORTED_MODULE_5__.CategoriesComponent
+}, {
+  path: 'about-us',
+  component: _about_us_about_us_component__WEBPACK_IMPORTED_MODULE_1__.AboutUsComponent
+}, {
+  path: 'games-list',
+  component: _games_list_games_list_component__WEBPACK_IMPORTED_MODULE_3__.GamesListComponent
+}, {
+  path: 'game-details',
+  component: _game_details_game_details_component__WEBPACK_IMPORTED_MODULE_4__.GameDetailsComponent
+}, {
+  path: 'about-us',
+  component: _about_us_about_us_component__WEBPACK_IMPORTED_MODULE_1__.AboutUsComponent
+}];
+class AppRoutingModule {}
+AppRoutingModule.ɵfac = function AppRoutingModule_Factory(t) {
+  return new (t || AppRoutingModule)();
+};
+AppRoutingModule.ɵmod = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdefineNgModule"]({
+  type: AppRoutingModule
+});
+AppRoutingModule.ɵinj = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdefineInjector"]({
+  imports: [_angular_router__WEBPACK_IMPORTED_MODULE_7__.RouterModule.forRoot(routes), _angular_router__WEBPACK_IMPORTED_MODULE_7__.RouterModule]
+});
+(function () {
+  (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵsetNgModuleScope"](AppRoutingModule, {
+    imports: [_angular_router__WEBPACK_IMPORTED_MODULE_7__.RouterModule],
+    exports: [_angular_router__WEBPACK_IMPORTED_MODULE_7__.RouterModule]
+  });
+})();
+
+/***/ }),
+
+/***/ 5041:
+/*!**********************************!*\
+  !*** ./src/app/app.component.ts ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "AppComponent": () => (/* binding */ AppComponent)
+/* harmony export */ });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 2560);
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ 124);
+
+
+const _c0 = function () {
+  return ["home"];
+};
+const _c1 = function () {
+  return ["categories"];
+};
+const _c2 = function () {
+  return ["about-us"];
+};
+const _c3 = function () {
+  return ["contact"];
+};
+class AppComponent {
+  constructor() {
+    this.title = 'GameStop';
+  }
+}
+AppComponent.ɵfac = function AppComponent_Factory(t) {
+  return new (t || AppComponent)();
+};
+AppComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
+  type: AppComponent,
+  selectors: [["app-root"]],
+  decls: 30,
+  vars: 10,
+  consts: [[1, "navbar", "navbar-light", "navbar-expand-md", "navigation-clean-search"], [1, "container-fluid"], ["href", "#", 1, "navbar-brand", 2, "font-family", "fantasy", "font-size", "xx-large", 3, "routerLink"], [2, "color", "red"], ["data-toggle", "collapse", "data-target", "#navcol-1", 1, "navbar-toggler"], [1, "sr-only"], [1, "navbar-toggler-icon"], ["id", "navcol-1", 1, "collapse", "navbar-collapse"], [1, "nav", "navbar-nav"], ["role", "presentation", 1, "nav-item"], ["href", "#", 1, "nav-link", 3, "routerLink"], [1, "text-center", "text-lg-start", "footer"], [1, "text-center", "p-3"], ["href", "https://devpractical.com/", 1, "text-dark"]],
+  template: function AppComponent_Template(rf, ctx) {
+    if (rf & 1) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nav", 0)(1, "div", 1)(2, "a", 2);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3, "Game");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "span", 3);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5, "Stop");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "button", 4)(7, "span", 5);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](8, "Toggle navigation");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](9, "span", 6);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "div", 7)(11, "ul", 8)(12, "li", 9)(13, "a", 10);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](14, "Home");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](15, "li", 9)(16, "a", 10);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](17, "Categories");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](18, "li", 9)(19, "a", 10);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](20, "About Us");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](21, "li", 9)(22, "a", 10);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](23, "Contact");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()()()()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](24, "router-outlet");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](25, "footer", 11)(26, "div", 12);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](27, " \u00A9 2023 Copyright: ");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](28, "a", 13);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](29, "Gaurav Hariyani");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()();
+    }
+    if (rf & 2) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](5, _c0));
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](11);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](6, _c0));
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](7, _c1));
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](8, _c2));
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLink", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](9, _c3));
+    }
+  },
+  dependencies: [_angular_router__WEBPACK_IMPORTED_MODULE_1__.RouterOutlet, _angular_router__WEBPACK_IMPORTED_MODULE_1__.RouterLink],
+  styles: [".navbar[_ngcontent-%COMP%]{\r\n    background-color: orange;\r\n}\r\nli[_ngcontent-%COMP%] {\r\n    color: red;\r\n}\r\na[_ngcontent-%COMP%] {\r\n    color: red;\r\n}\r\nli[_ngcontent-%COMP%]   [_ngcontent-%COMP%]:hover{\r\n    color: black;\r\n}\r\nnav[_ngcontent-%COMP%]{\r\n    font-weight: bold;\r\n}\r\n.footer[_ngcontent-%COMP%]{\r\n    background-color: orange;\r\n}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSx3QkFBd0I7QUFDNUI7QUFDQTtJQUNJLFVBQVU7QUFDZDtBQUNBO0lBQ0ksVUFBVTtBQUNkO0FBQ0E7SUFDSSxZQUFZO0FBQ2hCO0FBQ0E7SUFDSSxpQkFBaUI7QUFDckI7QUFDQTtJQUNJLHdCQUF3QjtBQUM1QiIsInNvdXJjZXNDb250ZW50IjpbIi5uYXZiYXJ7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiBvcmFuZ2U7XHJcbn1cclxubGkge1xyXG4gICAgY29sb3I6IHJlZDtcclxufVxyXG5hIHtcclxuICAgIGNvbG9yOiByZWQ7XHJcbn1cclxubGkgOmhvdmVye1xyXG4gICAgY29sb3I6IGJsYWNrO1xyXG59XHJcbm5hdntcclxuICAgIGZvbnQtd2VpZ2h0OiBib2xkO1xyXG59XHJcbi5mb290ZXJ7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiBvcmFuZ2U7XHJcbn0iXSwic291cmNlUm9vdCI6IiJ9 */"]
+});
+
+/***/ }),
+
+/***/ 6747:
+/*!*******************************!*\
+  !*** ./src/app/app.module.ts ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "AppModule": () => (/* binding */ AppModule)
+/* harmony export */ });
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/platform-browser */ 4497);
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/forms */ 2508);
+/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./app-routing.module */ 158);
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./app.component */ 5041);
+/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./home/home.component */ 5067);
+/* harmony import */ var _contact_contact_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./contact/contact.component */ 1563);
+/* harmony import */ var _about_us_about_us_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./about-us/about-us.component */ 1410);
+/* harmony import */ var _categories_categories_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./categories/categories.component */ 1224);
+/* harmony import */ var _games_list_games_list_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./games-list/games-list.component */ 9771);
+/* harmony import */ var _game_details_game_details_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./game-details/game-details.component */ 2408);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/core */ 2560);
+
+
+
+
+
+
+
+
+
+
+
+
+class AppModule {}
+AppModule.ɵfac = function AppModule_Factory(t) {
+  return new (t || AppModule)();
+};
+AppModule.ɵmod = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵdefineNgModule"]({
+  type: AppModule,
+  bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_1__.AppComponent]
+});
+AppModule.ɵinj = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵdefineInjector"]({
+  imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_9__.BrowserModule, _app_routing_module__WEBPACK_IMPORTED_MODULE_0__.AppRoutingModule, _angular_forms__WEBPACK_IMPORTED_MODULE_10__.FormsModule, _angular_forms__WEBPACK_IMPORTED_MODULE_10__.ReactiveFormsModule]
+});
+(function () {
+  (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵsetNgModuleScope"](AppModule, {
+    declarations: [_app_component__WEBPACK_IMPORTED_MODULE_1__.AppComponent, _home_home_component__WEBPACK_IMPORTED_MODULE_2__.HomeComponent, _contact_contact_component__WEBPACK_IMPORTED_MODULE_3__.ContactComponent, _about_us_about_us_component__WEBPACK_IMPORTED_MODULE_4__.AboutUsComponent, _categories_categories_component__WEBPACK_IMPORTED_MODULE_5__.CategoriesComponent, _games_list_games_list_component__WEBPACK_IMPORTED_MODULE_6__.GamesListComponent, _game_details_game_details_component__WEBPACK_IMPORTED_MODULE_7__.GameDetailsComponent],
+    imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_9__.BrowserModule, _app_routing_module__WEBPACK_IMPORTED_MODULE_0__.AppRoutingModule, _angular_forms__WEBPACK_IMPORTED_MODULE_10__.FormsModule, _angular_forms__WEBPACK_IMPORTED_MODULE_10__.ReactiveFormsModule]
+  });
+})();
+
+/***/ }),
+
+/***/ 1224:
+/*!****************************************************!*\
+  !*** ./src/app/categories/categories.component.ts ***!
+  \****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "CategoriesComponent": () => (/* binding */ CategoriesComponent)
+/* harmony export */ });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 2560);
+
+class CategoriesComponent {}
+CategoriesComponent.ɵfac = function CategoriesComponent_Factory(t) {
+  return new (t || CategoriesComponent)();
+};
+CategoriesComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
+  type: CategoriesComponent,
+  selectors: [["app-categories"]],
+  decls: 62,
+  vars: 0,
+  consts: [["lang", "en"], ["charset", "UTF-8"], ["http-equiv", "X-UA-Compatible", "content", "IE=edge"], ["name", "viewport", "content", "width=device-width, initial-scale=1.0"], ["align", "center"], [1, "title"], [2, "margin-left", "10%", "margin-right", "10%", "margin-top", "2%", "padding-top", "3%", "padding-bottom", "3%", "padding-right", "1%", "padding-left", "1%", "border", "2px solid orange", "border-radius", "20px"], [2, "margin", "auto", "max-width", "92%"], [1, "row"], [1, "card", "zoom", 2, "width", "18rem", "border-radius", "20px", "margin", "2%"], ["src", "https://store.steampowered.com/categories/homepageimage/category/rpg?cc=us&l=english", 1, "zoom"], [1, "gradient", 2, "background", "linear-gradient(rgba(0,0,0,0), rgb(139,0,0) 100%)"], [1, "label_ctn"], [1, "label"], ["src", "https://store.steampowered.com/categories/homepageimage/category/adventure?cc=us&l=english", 1, "zoom"], [1, "gradient", 2, "background", "linear-gradient(rgba(0,0,0,0), rgb(0, 97, 139) 100%)"], ["src", "https://store.steampowered.com/categories/homepageimage/category/story_rich?cc=us&l=english", 1, "zoom"], [1, "gradient", 2, "background", "linear-gradient(rgba(0,0,0,0), rgb(0, 139, 39) 100%)"], ["src", "https://store.steampowered.com/categories/homepageimage/category/action?cc=us&l=english", 1, "zoom"], [1, "gradient", 2, "background", "linear-gradient(rgba(0,0,0,0), rgb(113, 0, 139) 100%)"], ["src", "https://store.steampowered.com/categories/homepageimage/category/racing?cc=us&l=english", 1, "zoom"], [1, "gradient", 2, "background", "linear-gradient(rgba(0,0,0,0), rgb(134, 139, 0) 100%)"], ["src", "https://store.steampowered.com/categories/homepageimage/category/survival?cc=us&l=english", 1, "zoom"], [1, "gradient", 2, "background", "linear-gradient(rgba(0,0,0,0), rgb(87, 85, 58) 100%)"], ["src", "https://store.steampowered.com/categories/homepageimage/freetoplay?cc=us&l=english", 1, "zoom"], [1, "gradient", 2, "background", "linear-gradient(rgba(0,0,0,0), rgb(6, 3, 44) 100%)"], ["src", "https://store.steampowered.com/categories/homepageimage/category/anime?cc=us&l=english", 1, "zoom"], [1, "gradient", 2, "background", "linear-gradient(rgba(0,0,0,0), rgb(108, 7, 37) 100%)"]],
+  template: function CategoriesComponent_Template(rf, ctx) {
+    if (rf & 1) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "html", 0)(1, "head");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "meta", 1)(3, "meta", 2)(4, "meta", 3);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "title");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6, "Document");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "body")(8, "div", 4)(9, "h1", 5);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](10, "Categories");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "section", 6)(12, "div", 7)(13, "div", 8)(14, "div", 9);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](15, "img", 10)(16, "div", 11);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](17, "div", 12)(18, "span", 13);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](19, "Role Playing");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](20, "div", 9);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](21, "img", 14)(22, "div", 15);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](23, "div", 12)(24, "span", 13);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](25, "Adventure");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](26, "div", 9);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](27, "img", 16)(28, "div", 17);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](29, "div", 12)(30, "span", 13);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](31, "Story-Rich");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](32, "div", 9);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](33, "img", 18)(34, "div", 19);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](35, "div", 12)(36, "span", 13);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](37, "Action");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](38, "div", 9);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](39, "img", 20)(40, "div", 21);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](41, "div", 12)(42, "span", 13);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](43, "Racing");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](44, "div", 9);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](45, "img", 22)(46, "div", 23);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](47, "div", 12)(48, "span", 13);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](49, "Survival");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](50, "div", 9);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](51, "img", 24)(52, "div", 25);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](53, "div", 12)(54, "span", 13);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](55, "Free-to-play");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](56, "div", 9);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](57, "img", 26)(58, "div", 27);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](59, "div", 12)(60, "span", 13);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](61, "Anime");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()()()()()()();
+    }
+  },
+  styles: ["#item[_ngcontent-%COMP%] {\r\n    transition: all 0.5s ease-out;\r\n    background: #fff;\r\n    color: #000;\r\n}\r\n\r\n.hovered[_ngcontent-%COMP%] {\r\n    background: #000 !important;\r\n    color: #fff !important;\r\n}\r\n\r\n.zoom[_ngcontent-%COMP%] {\r\n    \r\n    transition: transform .2s;\r\n    \r\n    height: 10rem;\r\n    \r\n    border-radius: 20px;\r\n}\r\n\r\n.zoom[_ngcontent-%COMP%]:hover {\r\n    \r\n    \r\n    transform: scale(1.2);\r\n}\r\n.card-ui[_ngcontent-%COMP%] {\r\n    width: 18rem;\r\n    border-radius: 20px;\r\n    margin: 2%;\r\n    background-color: orange;\r\n  }\r\nbody[_ngcontent-%COMP%] {\r\n    background-color: black;\r\n}\r\n\r\n.gradient[_ngcontent-%COMP%] {\r\n    position: absolute;\r\n    top: 0;\r\n    height: 10rem;\r\n    width: 100%;\r\n    border-radius: 20px;\r\n}\r\n\r\n.label_ctn[_ngcontent-%COMP%] {\r\n    position: absolute;\r\n    bottom: 16px;\r\n    text-align: center;\r\n    width: 90%;\r\n    padding: 1em;\r\n}\r\n\r\n.label[_ngcontent-%COMP%] {\r\n    font-size: 16px;\r\n    font-weight: bold;\r\n    letter-spacing: 0.1ch;\r\n    color: white;\r\n    text-shadow: 0 1px 3px rgb(0 0 0 / 50%);\r\n    text-transform: uppercase;\r\n}\r\n\r\n.title[_ngcontent-%COMP%] {\r\n    padding-top: 5%;\r\n    font-size: 70px;\r\n    font-family: fantasy;\r\n    color: orange;\r\n}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9hcHAvY2F0ZWdvcmllcy9jYXRlZ29yaWVzLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSw2QkFBNkI7SUFDN0IsZ0JBQWdCO0lBQ2hCLFdBQVc7QUFDZjs7QUFFQTtJQUNJLDJCQUEyQjtJQUMzQixzQkFBc0I7QUFDMUI7O0FBRUE7SUFDSSw2QkFBNkI7SUFDN0IseUJBQXlCO0lBQ3pCLGtCQUFrQjtJQUNsQixhQUFhO0lBQ2Isb0JBQW9CO0lBQ3BCLG1CQUFtQjtBQUN2Qjs7QUFFQTtJQUVJLFNBQVM7SUFFVCxlQUFlO0lBQ2YscUJBQXFCO0FBQ3pCO0FBQ0E7SUFDSSxZQUFZO0lBQ1osbUJBQW1CO0lBQ25CLFVBQVU7SUFDVix3QkFBd0I7RUFDMUI7QUFDRjtJQUNJLHVCQUF1QjtBQUMzQjs7QUFFQTtJQUNJLGtCQUFrQjtJQUNsQixNQUFNO0lBQ04sYUFBYTtJQUNiLFdBQVc7SUFDWCxtQkFBbUI7QUFDdkI7O0FBRUE7SUFDSSxrQkFBa0I7SUFDbEIsWUFBWTtJQUNaLGtCQUFrQjtJQUNsQixVQUFVO0lBQ1YsWUFBWTtBQUNoQjs7QUFFQTtJQUNJLGVBQWU7SUFDZixpQkFBaUI7SUFDakIscUJBQXFCO0lBQ3JCLFlBQVk7SUFDWix1Q0FBdUM7SUFDdkMseUJBQXlCO0FBQzdCOztBQUVBO0lBQ0ksZUFBZTtJQUNmLGVBQWU7SUFDZixvQkFBb0I7SUFDcEIsYUFBYTtBQUNqQiIsInNvdXJjZXNDb250ZW50IjpbIiNpdGVtIHtcclxuICAgIHRyYW5zaXRpb246IGFsbCAwLjVzIGVhc2Utb3V0O1xyXG4gICAgYmFja2dyb3VuZDogI2ZmZjtcclxuICAgIGNvbG9yOiAjMDAwO1xyXG59XHJcblxyXG4uaG92ZXJlZCB7XHJcbiAgICBiYWNrZ3JvdW5kOiAjMDAwICFpbXBvcnRhbnQ7XHJcbiAgICBjb2xvcjogI2ZmZiAhaW1wb3J0YW50O1xyXG59XHJcblxyXG4uem9vbSB7XHJcbiAgICAvKiBiYWNrZ3JvdW5kLWNvbG9yOiBncmVlbjsgKi9cclxuICAgIHRyYW5zaXRpb246IHRyYW5zZm9ybSAuMnM7XHJcbiAgICAvKiB3aWR0aDogMThyZW07ICovXHJcbiAgICBoZWlnaHQ6IDEwcmVtO1xyXG4gICAgLyogbWFyZ2luOiAwIGF1dG87ICovXHJcbiAgICBib3JkZXItcmFkaXVzOiAyMHB4O1xyXG59XHJcblxyXG4uem9vbTpob3ZlciB7XHJcbiAgICAtbXMtdHJhbnNmb3JtOiBzY2FsZSgxLjIpO1xyXG4gICAgLyogSUUgOSAqL1xyXG4gICAgLXdlYmtpdC10cmFuc2Zvcm06IHNjYWxlKDEuMik7XHJcbiAgICAvKiBTYWZhcmkgMy04ICovXHJcbiAgICB0cmFuc2Zvcm06IHNjYWxlKDEuMik7XHJcbn1cclxuLmNhcmQtdWkge1xyXG4gICAgd2lkdGg6IDE4cmVtO1xyXG4gICAgYm9yZGVyLXJhZGl1czogMjBweDtcclxuICAgIG1hcmdpbjogMiU7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiBvcmFuZ2U7XHJcbiAgfVxyXG5ib2R5IHtcclxuICAgIGJhY2tncm91bmQtY29sb3I6IGJsYWNrO1xyXG59XHJcblxyXG4uZ3JhZGllbnQge1xyXG4gICAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gICAgdG9wOiAwO1xyXG4gICAgaGVpZ2h0OiAxMHJlbTtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG4gICAgYm9yZGVyLXJhZGl1czogMjBweDtcclxufVxyXG5cclxuLmxhYmVsX2N0biB7XHJcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgICBib3R0b206IDE2cHg7XHJcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgICB3aWR0aDogOTAlO1xyXG4gICAgcGFkZGluZzogMWVtO1xyXG59XHJcblxyXG4ubGFiZWwge1xyXG4gICAgZm9udC1zaXplOiAxNnB4O1xyXG4gICAgZm9udC13ZWlnaHQ6IGJvbGQ7XHJcbiAgICBsZXR0ZXItc3BhY2luZzogMC4xY2g7XHJcbiAgICBjb2xvcjogd2hpdGU7XHJcbiAgICB0ZXh0LXNoYWRvdzogMCAxcHggM3B4IHJnYigwIDAgMCAvIDUwJSk7XHJcbiAgICB0ZXh0LXRyYW5zZm9ybTogdXBwZXJjYXNlO1xyXG59XHJcblxyXG4udGl0bGUge1xyXG4gICAgcGFkZGluZy10b3A6IDUlO1xyXG4gICAgZm9udC1zaXplOiA3MHB4O1xyXG4gICAgZm9udC1mYW1pbHk6IGZhbnRhc3k7XHJcbiAgICBjb2xvcjogb3JhbmdlO1xyXG59XHJcbiJdLCJzb3VyY2VSb290IjoiIn0= */"]
+});
+
+/***/ }),
+
+/***/ 1563:
+/*!**********************************************!*\
+  !*** ./src/app/contact/contact.component.ts ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "ContactComponent": () => (/* binding */ ContactComponent)
+/* harmony export */ });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 2560);
+
+class ContactComponent {}
+ContactComponent.ɵfac = function ContactComponent_Factory(t) {
+  return new (t || ContactComponent)();
+};
+ContactComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
+  type: ContactComponent,
+  selectors: [["app-contact"]],
+  decls: 2,
+  vars: 0,
+  template: function ContactComponent_Template(rf, ctx) {
+    if (rf & 1) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "p");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "contact works!");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    }
+  },
+  styles: ["\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsInNvdXJjZVJvb3QiOiIifQ== */"]
+});
+
+/***/ }),
+
+/***/ 2408:
+/*!********************************************************!*\
+  !*** ./src/app/game-details/game-details.component.ts ***!
+  \********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "GameDetailsComponent": () => (/* binding */ GameDetailsComponent)
+/* harmony export */ });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 2560);
+
+class GameDetailsComponent {}
+GameDetailsComponent.ɵfac = function GameDetailsComponent_Factory(t) {
+  return new (t || GameDetailsComponent)();
+};
+GameDetailsComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
+  type: GameDetailsComponent,
+  selectors: [["app-game-details"]],
+  decls: 8,
+  vars: 0,
+  consts: [["lang", "en"], ["charset", "UTF-8"], ["http-equiv", "X-UA-Compatible", "content", "IE=edge"], ["name", "viewport", "content", "width=device-width, initial-scale=1.0"]],
+  template: function GameDetailsComponent_Template(rf, ctx) {
+    if (rf & 1) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "html", 0)(1, "head");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "meta", 1)(3, "meta", 2)(4, "meta", 3);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "title");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6, "Game");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](7, "body");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    }
+  },
+  styles: [".carousel[_ngcontent-%COMP%]   .carousel-item[_ngcontent-%COMP%] {\r\n    height: 600px;\r\n  }\r\n  \r\n  .carousel-item[_ngcontent-%COMP%]   img[_ngcontent-%COMP%] {\r\n    position: absolute;\r\n    top: 0;\r\n    left: 0;\r\n    min-height: 600px;\r\n  }\r\n  \r\n  #item[_ngcontent-%COMP%] {\r\n    transition: all 0.5s ease-out;\r\n    background: #fff;\r\n    color: #000;\r\n  }\r\n  \r\n  .hovered[_ngcontent-%COMP%] {\r\n    background: #000 !important;\r\n    color: #fff !important;\r\n  }\r\n  \r\n  .zoom[_ngcontent-%COMP%] {\r\n    \r\n    transition: transform .2s;\r\n    \r\n    height: 15rem;\r\n    \r\n    border-radius: 20px;\r\n  }\r\n  \r\n  .zoom[_ngcontent-%COMP%]:hover {\r\n    \r\n    \r\n    transform: scale(1.2);\r\n  }\r\n  \r\n  body[_ngcontent-%COMP%] {\r\n    background-color: black;\r\n  }\r\n  \r\n  .card-ui[_ngcontent-%COMP%] {\r\n    width: 18rem;\r\n    height: 20rem;\r\n    border-radius: 20px;\r\n    margin: 2%;\r\n    background-color: orange;\r\n  }\r\n  \r\n  .title[_ngcontent-%COMP%] {\r\n    font-size: 70px;\r\n    font-family: fantasy;\r\n    color: orange;\r\n  }\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9hcHAvZ2FtZS1kZXRhaWxzL2dhbWUtZGV0YWlscy5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksYUFBYTtFQUNmOztFQUVBO0lBQ0Usa0JBQWtCO0lBQ2xCLE1BQU07SUFDTixPQUFPO0lBQ1AsaUJBQWlCO0VBQ25COztFQUVBO0lBQ0UsNkJBQTZCO0lBQzdCLGdCQUFnQjtJQUNoQixXQUFXO0VBQ2I7O0VBRUE7SUFDRSwyQkFBMkI7SUFDM0Isc0JBQXNCO0VBQ3hCOztFQUVBO0lBQ0UsNkJBQTZCO0lBQzdCLHlCQUF5QjtJQUN6QixrQkFBa0I7SUFDbEIsYUFBYTtJQUNiLG9CQUFvQjtJQUNwQixtQkFBbUI7RUFDckI7O0VBRUE7SUFFRSxTQUFTO0lBRVQsZUFBZTtJQUNmLHFCQUFxQjtFQUN2Qjs7RUFFQTtJQUNFLHVCQUF1QjtFQUN6Qjs7RUFFQTtJQUNFLFlBQVk7SUFDWixhQUFhO0lBQ2IsbUJBQW1CO0lBQ25CLFVBQVU7SUFDVix3QkFBd0I7RUFDMUI7O0VBRUE7SUFDRSxlQUFlO0lBQ2Ysb0JBQW9CO0lBQ3BCLGFBQWE7RUFDZiIsInNvdXJjZXNDb250ZW50IjpbIi5jYXJvdXNlbCAuY2Fyb3VzZWwtaXRlbSB7XHJcbiAgICBoZWlnaHQ6IDYwMHB4O1xyXG4gIH1cclxuICBcclxuICAuY2Fyb3VzZWwtaXRlbSBpbWcge1xyXG4gICAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gICAgdG9wOiAwO1xyXG4gICAgbGVmdDogMDtcclxuICAgIG1pbi1oZWlnaHQ6IDYwMHB4O1xyXG4gIH1cclxuICBcclxuICAjaXRlbSB7XHJcbiAgICB0cmFuc2l0aW9uOiBhbGwgMC41cyBlYXNlLW91dDtcclxuICAgIGJhY2tncm91bmQ6ICNmZmY7XHJcbiAgICBjb2xvcjogIzAwMDtcclxuICB9XHJcbiAgXHJcbiAgLmhvdmVyZWQge1xyXG4gICAgYmFja2dyb3VuZDogIzAwMCAhaW1wb3J0YW50O1xyXG4gICAgY29sb3I6ICNmZmYgIWltcG9ydGFudDtcclxuICB9XHJcbiAgXHJcbiAgLnpvb20ge1xyXG4gICAgLyogYmFja2dyb3VuZC1jb2xvcjogZ3JlZW47ICovXHJcbiAgICB0cmFuc2l0aW9uOiB0cmFuc2Zvcm0gLjJzO1xyXG4gICAgLyogd2lkdGg6IDE4cmVtOyAqL1xyXG4gICAgaGVpZ2h0OiAxNXJlbTtcclxuICAgIC8qIG1hcmdpbjogMCBhdXRvOyAqL1xyXG4gICAgYm9yZGVyLXJhZGl1czogMjBweDtcclxuICB9XHJcbiAgXHJcbiAgLnpvb206aG92ZXIge1xyXG4gICAgLW1zLXRyYW5zZm9ybTogc2NhbGUoMS4yKTtcclxuICAgIC8qIElFIDkgKi9cclxuICAgIC13ZWJraXQtdHJhbnNmb3JtOiBzY2FsZSgxLjIpO1xyXG4gICAgLyogU2FmYXJpIDMtOCAqL1xyXG4gICAgdHJhbnNmb3JtOiBzY2FsZSgxLjIpO1xyXG4gIH1cclxuICBcclxuICBib2R5IHtcclxuICAgIGJhY2tncm91bmQtY29sb3I6IGJsYWNrO1xyXG4gIH1cclxuICBcclxuICAuY2FyZC11aSB7XHJcbiAgICB3aWR0aDogMThyZW07XHJcbiAgICBoZWlnaHQ6IDIwcmVtO1xyXG4gICAgYm9yZGVyLXJhZGl1czogMjBweDtcclxuICAgIG1hcmdpbjogMiU7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiBvcmFuZ2U7XHJcbiAgfVxyXG4gIFxyXG4gIC50aXRsZSB7XHJcbiAgICBmb250LXNpemU6IDcwcHg7XHJcbiAgICBmb250LWZhbWlseTogZmFudGFzeTtcclxuICAgIGNvbG9yOiBvcmFuZ2U7XHJcbiAgfSJdLCJzb3VyY2VSb290IjoiIn0= */"]
+});
+
+/***/ }),
+
+/***/ 9771:
+/*!****************************************************!*\
+  !*** ./src/app/games-list/games-list.component.ts ***!
+  \****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "GamesListComponent": () => (/* binding */ GamesListComponent)
+/* harmony export */ });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 2560);
+
+class GamesListComponent {}
+GamesListComponent.ɵfac = function GamesListComponent_Factory(t) {
+  return new (t || GamesListComponent)();
+};
+GamesListComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
+  type: GamesListComponent,
+  selectors: [["app-games-list"]],
+  decls: 2,
+  vars: 0,
+  template: function GamesListComponent_Template(rf, ctx) {
+    if (rf & 1) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "p");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "games-list works!");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    }
+  },
+  styles: ["\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsInNvdXJjZVJvb3QiOiIifQ== */"]
+});
+
+/***/ }),
+
+/***/ 5067:
+/*!****************************************!*\
+  !*** ./src/app/home/home.component.ts ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "HomeComponent": () => (/* binding */ HomeComponent)
+/* harmony export */ });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 2560);
+
+class HomeComponent {
+  ngOnInit() {}
+  getName(name) {
+    console.log(name);
+    this.gameName = name;
+    if (name == 'CyberPunk 2077') {
+      this.gameVideo = 'https://cdn.cloudflare.steamstatic.com/steam/apps/256936856/movie_max_vp9.webm?t=1679389216';
+      console.log(this.gameVideo);
+    }
+  }
+}
+HomeComponent.ɵfac = function HomeComponent_Factory(t) {
+  return new (t || HomeComponent)();
+};
+HomeComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
+  type: HomeComponent,
+  selectors: [["app-home"]],
+  decls: 102,
+  vars: 3,
+  consts: [["lang", "en"], ["charset", "UTF-8"], ["http-equiv", "X-UA-Compatible", "content", "IE=edge"], ["name", "viewport", "content", "width=device-width, initial-scale=1.0"], ["id", "exampleModal", "tabindex", "-1", "role", "dialog", "data-backdrop", "false", "aria-labelledby", "exampleModalLabel", "aria-hidden", "true", 1, "modal", "fade"], ["role", "document", 1, "modal-dialog"], [1, "modal-content"], [1, "modal-header"], ["id", "exampleModalLabel", 1, "modal-title"], ["type", "button", "data-dismiss", "modal", "aria-label", "Close", 1, "close"], ["aria-hidden", "true"], [1, "modal-body"], ["controls", "", "loop", "", 1, "d-block", "w-100", 2, "border-radius", "20px"], ["type", "video/webm", 3, "src"], [1, "modal-footer"], ["type", "button", "data-dismiss", "modal", 1, "btn", "btn-secondary"], ["type", "button", 1, "btn", "btn-primary"], [2, "padding", "2%"], ["align", "center"], ["id", "carouselExampleIndicators", "data-ride", "carousel", 1, "carousel", "slide", "col-8"], [1, "carousel-indicators"], ["data-target", "#carouselExampleIndicators", "data-slide-to", "0", 1, "active"], ["data-target", "#carouselExampleIndicators", "data-slide-to", "1"], ["data-target", "#carouselExampleIndicators", "data-slide-to", "2"], [1, "carousel-inner", 2, "border-radius", "20px", "border", "2px solid orange"], [1, "carousel-item", "active"], ["src", "https://images.drive.com.au/driveau/image/upload/c_fill,f_auto,g_auto,h_540,q_auto:good,w_960/cms/uploads/wg6q7wpnssorinqmj7ew", "alt", "First slide", 1, "d-block", "w-100", 2, "border-radius", "20px"], [1, "carousel-item"], ["controls", "", "autoplay", "", "loop", "", 1, "d-block", "w-100", 2, "border-radius", "20px", 3, "muted"], ["src", "https://cdn.cloudflare.steamstatic.com/steam/apps/256936856/movie_max_vp9.webm?t=1679389216", "type", "video/webm"], ["src", "https://cdn-l-cyberpunk.cdprojektred.com/wallpapers/1080p/Cyberpunk2077NG_Cover_art_RGB-en.jpg", "alt", "Third slide", 1, "d-block", "w-100", 2, "border-radius", "20px"], ["href", "#carouselExampleIndicators", "role", "button", "data-slide", "prev", 1, "carousel-control-prev"], ["aria-hidden", "true", 1, "carousel-control-prev-icon"], [1, "sr-only"], ["href", "#carouselExampleIndicators", "role", "button", "data-slide", "next", 1, "carousel-control-next"], ["aria-hidden", "true", 1, "carousel-control-next-icon"], [1, "title"], [2, "margin-left", "10%", "margin-right", "10%", "margin-top", "2%", "padding", "1%", "border", "2px solid orange", "border-radius", "20px"], [2, "margin", "auto", "max-width", "92%"], [1, "row"], ["href", "#", "data-toggle", "modal", "data-target", "#exampleModal", 1, "card-ui-a", 3, "click"], [1, "card", "card-ui", "card-zoom"], ["onmouseenter", "this.src='assets/Gamepics/1.jpg'", "onmouseleave", "this.src='assets/Gamepics/2.jpg'", "src", "assets/Gamepics/2.jpg", 1, "zoom"], [1, "card-body"], [1, "card-text"], ["onmouseenter", "this.src='assets/Gamepics/3.jpg'", "onmouseleave", "this.src='assets/Gamepics/4.jpg'", "src", "assets/Gamepics/4.jpg", 1, "zoom"], ["id", "gamename", 1, "card-text"], ["href", "#", "data-toggle", "modal", "data-target", "#exampleModal", 1, "card-ui-a"], ["onmouseenter", "this.src='assets/Gamepics/2.jpg'", "onmouseleave", "this.src='assets/Gamepics/2.jpg'", "src", "assets/Gamepics/2.jpg", 1, "zoom"]],
+  template: function HomeComponent_Template(rf, ctx) {
+    if (rf & 1) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "html", 0)(1, "head");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "meta", 1)(3, "meta", 2)(4, "meta", 3);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "title");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6, "Home");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "body")(8, "div", 4)(9, "div", 5)(10, "div", 6)(11, "div", 7)(12, "h1", 8);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](13);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](14, "button", 9)(15, "span", 10);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](16, "\u00D7");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](17, "div", 11)(18, "video", 12);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](19, "source", 13);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](20, "div", 14)(21, "button", 15);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](22, "Close");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](23, "button", 16);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](24, "Save changes");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()()()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](25, "section", 17)(26, "div", 18)(27, "div", 19)(28, "ol", 20);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](29, "li", 21)(30, "li", 22)(31, "li", 23);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](32, "div", 24)(33, "div", 25);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](34, "img", 26);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](35, "div", 27)(36, "video", 28);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](37, "source", 29);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](38, "div", 27);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](39, "img", 30);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](40, "a", 31);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](41, "span", 32);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](42, "span", 33);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](43, "Previous");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](44, "a", 34);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](45, "span", 35);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](46, "span", 33);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](47, "Next");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()()()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](48, "br");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](49, "div", 18)(50, "h1", 36);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](51, "Featured Games");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](52, "section", 37)(53, "div", 38)(54, "div", 39)(55, "a", 40);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function HomeComponent_Template_a_click_55_listener() {
+        return ctx.getName("CyberPunk 2077");
+      });
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](56, "div", 41);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](57, "img", 42);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](58, "div", 43)(59, "p", 44);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](60, "CyberPunk 2077");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](61, "a", 40);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function HomeComponent_Template_a_click_61_listener() {
+        return ctx.getName("Assetto Corsa Competizione");
+      });
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](62, "div", 41);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](63, "img", 45);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](64, "div", 43)(65, "p", 46);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](66, "Assetto Corsa Competizione");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](67, "a", 47)(68, "div", 41);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](69, "img", 48);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](70, "div", 43)(71, "p", 44);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](72, "Some quick example text to build on the card title and make up the bulk of the card's content.");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](73, "a", 47)(74, "div", 41);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](75, "img", 48);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](76, "div", 43)(77, "p", 44);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](78, "Some quick example text to build on the card title and make up the bulk of the card's content.");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](79, "a", 47)(80, "div", 41);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](81, "img", 48);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](82, "div", 43)(83, "p", 44);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](84, "Some quick example text to build on the card title and make up the bulk of the card's content.");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](85, "a", 47)(86, "div", 41);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](87, "img", 48);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](88, "div", 43)(89, "p", 44);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](90, "Some quick example text to build on the card title and make up the bulk of the card's content.");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](91, "a", 47)(92, "div", 41);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](93, "img", 48);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](94, "div", 43)(95, "p", 44);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](96, "Some quick example text to build on the card title and make up the bulk of the card's content.");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](97, "div", 41);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](98, "img", 48);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](99, "div", 43)(100, "p", 44);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](101, "Some quick example text to build on the card title and make up the bulk of the card's content.");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()()()()()()();
+    }
+    if (rf & 2) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](13);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx.gameName);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](6);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("src", ctx.gameVideo, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsanitizeUrl"]);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](17);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("muted", "muted");
+    }
+  },
+  styles: [".carousel[_ngcontent-%COMP%]   .carousel-item[_ngcontent-%COMP%] {\r\n  height: 600px;\r\n}\r\n\r\n.carousel-item[_ngcontent-%COMP%]   img[_ngcontent-%COMP%] {\r\n  position: absolute;\r\n  top: 0;\r\n  left: 0;\r\n  min-height: 600px;\r\n}\r\n\r\n#item[_ngcontent-%COMP%] {\r\n  transition: all 0.5s ease-out;\r\n  background: #fff;\r\n  color: #000;\r\n}\r\n\r\n.hovered[_ngcontent-%COMP%] {\r\n  background: #000 !important;\r\n  color: #fff !important;\r\n}\r\n\r\n.zoom[_ngcontent-%COMP%] {\r\n  \r\n  transition: transform .2s;\r\n  \r\n  height: 15rem;\r\n  \r\n  border-radius: 20px;\r\n}\r\n\r\n.zoom[_ngcontent-%COMP%]:hover {\r\n  \r\n  \r\n  transform: scale(1.1);\r\n}\r\n\r\n.card-zoom[_ngcontent-%COMP%] {\r\n  \r\n  transition: transform .2s;\r\n  \r\n  \r\n  border-radius: 20px;\r\n}\r\n\r\n.card-zoom[_ngcontent-%COMP%]:hover {\r\n  \r\n  \r\n  transform: scale(1.2);\r\n}\r\n\r\nbody[_ngcontent-%COMP%] {\r\n  background-color: black;\r\n}\r\n\r\n.modal-content[_ngcontent-%COMP%] {\r\n  font-family: fantasy;\r\n  background-color: orange;\r\n  border: 2px solid black;\r\n  border-radius: 20px;\r\n}\r\n\r\n.modal-dialog[_ngcontent-%COMP%] {\r\n\r\n  max-width: 60%;\r\n}\r\n\r\n.card-ui[_ngcontent-%COMP%] {\r\n  width: 18rem;\r\n  height: 20rem;\r\n  border-radius: 20px;\r\n  margin: 2%;\r\n  background-color: orange;\r\n}\r\n\r\n.card-ui-a[_ngcontent-%COMP%] {\r\n  font-family: fantasy;\r\n  color: black;\r\n  margin: 2%;\r\n}\r\n\r\n.title[_ngcontent-%COMP%] {\r\n  font-size: 70px;\r\n  font-family: fantasy;\r\n  color: orange;\r\n}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9hcHAvaG9tZS9ob21lLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxhQUFhO0FBQ2Y7O0FBRUE7RUFDRSxrQkFBa0I7RUFDbEIsTUFBTTtFQUNOLE9BQU87RUFDUCxpQkFBaUI7QUFDbkI7O0FBRUE7RUFDRSw2QkFBNkI7RUFDN0IsZ0JBQWdCO0VBQ2hCLFdBQVc7QUFDYjs7QUFFQTtFQUNFLDJCQUEyQjtFQUMzQixzQkFBc0I7QUFDeEI7O0FBRUE7RUFDRSw2QkFBNkI7RUFDN0IseUJBQXlCO0VBQ3pCLGtCQUFrQjtFQUNsQixhQUFhO0VBQ2Isb0JBQW9CO0VBQ3BCLG1CQUFtQjtBQUNyQjs7QUFFQTtFQUVFLFNBQVM7RUFFVCxlQUFlO0VBQ2YscUJBQXFCO0FBQ3ZCOztBQUVBO0VBQ0UsNkJBQTZCO0VBQzdCLHlCQUF5QjtFQUN6QixrQkFBa0I7RUFDbEIsb0JBQW9CO0VBQ3BCLG1CQUFtQjtBQUNyQjs7QUFFQTtFQUVFLFNBQVM7RUFFVCxlQUFlO0VBQ2YscUJBQXFCO0FBQ3ZCOztBQUVBO0VBQ0UsdUJBQXVCO0FBQ3pCOztBQUVBO0VBQ0Usb0JBQW9CO0VBQ3BCLHdCQUF3QjtFQUN4Qix1QkFBdUI7RUFDdkIsbUJBQW1CO0FBQ3JCOztBQUVBOztFQUVFLGNBQWM7QUFDaEI7O0FBRUE7RUFDRSxZQUFZO0VBQ1osYUFBYTtFQUNiLG1CQUFtQjtFQUNuQixVQUFVO0VBQ1Ysd0JBQXdCO0FBQzFCOztBQUVBO0VBQ0Usb0JBQW9CO0VBQ3BCLFlBQVk7RUFDWixVQUFVO0FBQ1o7O0FBRUE7RUFDRSxlQUFlO0VBQ2Ysb0JBQW9CO0VBQ3BCLGFBQWE7QUFDZiIsInNvdXJjZXNDb250ZW50IjpbIi5jYXJvdXNlbCAuY2Fyb3VzZWwtaXRlbSB7XHJcbiAgaGVpZ2h0OiA2MDBweDtcclxufVxyXG5cclxuLmNhcm91c2VsLWl0ZW0gaW1nIHtcclxuICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgdG9wOiAwO1xyXG4gIGxlZnQ6IDA7XHJcbiAgbWluLWhlaWdodDogNjAwcHg7XHJcbn1cclxuXHJcbiNpdGVtIHtcclxuICB0cmFuc2l0aW9uOiBhbGwgMC41cyBlYXNlLW91dDtcclxuICBiYWNrZ3JvdW5kOiAjZmZmO1xyXG4gIGNvbG9yOiAjMDAwO1xyXG59XHJcblxyXG4uaG92ZXJlZCB7XHJcbiAgYmFja2dyb3VuZDogIzAwMCAhaW1wb3J0YW50O1xyXG4gIGNvbG9yOiAjZmZmICFpbXBvcnRhbnQ7XHJcbn1cclxuXHJcbi56b29tIHtcclxuICAvKiBiYWNrZ3JvdW5kLWNvbG9yOiBncmVlbjsgKi9cclxuICB0cmFuc2l0aW9uOiB0cmFuc2Zvcm0gLjJzO1xyXG4gIC8qIHdpZHRoOiAxOHJlbTsgKi9cclxuICBoZWlnaHQ6IDE1cmVtO1xyXG4gIC8qIG1hcmdpbjogMCBhdXRvOyAqL1xyXG4gIGJvcmRlci1yYWRpdXM6IDIwcHg7XHJcbn1cclxuXHJcbi56b29tOmhvdmVyIHtcclxuICAtbXMtdHJhbnNmb3JtOiBzY2FsZSgxLjApO1xyXG4gIC8qIElFIDkgKi9cclxuICAtd2Via2l0LXRyYW5zZm9ybTogc2NhbGUoMS4wKTtcclxuICAvKiBTYWZhcmkgMy04ICovXHJcbiAgdHJhbnNmb3JtOiBzY2FsZSgxLjEpO1xyXG59XHJcblxyXG4uY2FyZC16b29tIHtcclxuICAvKiBiYWNrZ3JvdW5kLWNvbG9yOiBncmVlbjsgKi9cclxuICB0cmFuc2l0aW9uOiB0cmFuc2Zvcm0gLjJzO1xyXG4gIC8qIHdpZHRoOiAxOHJlbTsgKi9cclxuICAvKiBtYXJnaW46IDAgYXV0bzsgKi9cclxuICBib3JkZXItcmFkaXVzOiAyMHB4O1xyXG59XHJcblxyXG4uY2FyZC16b29tOmhvdmVyIHtcclxuICAtbXMtdHJhbnNmb3JtOiBzY2FsZSgxLjIpO1xyXG4gIC8qIElFIDkgKi9cclxuICAtd2Via2l0LXRyYW5zZm9ybTogc2NhbGUoMS4yKTtcclxuICAvKiBTYWZhcmkgMy04ICovXHJcbiAgdHJhbnNmb3JtOiBzY2FsZSgxLjIpO1xyXG59XHJcblxyXG5ib2R5IHtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiBibGFjaztcclxufVxyXG5cclxuLm1vZGFsLWNvbnRlbnQge1xyXG4gIGZvbnQtZmFtaWx5OiBmYW50YXN5O1xyXG4gIGJhY2tncm91bmQtY29sb3I6IG9yYW5nZTtcclxuICBib3JkZXI6IDJweCBzb2xpZCBibGFjaztcclxuICBib3JkZXItcmFkaXVzOiAyMHB4O1xyXG59XHJcblxyXG4ubW9kYWwtZGlhbG9nIHtcclxuXHJcbiAgbWF4LXdpZHRoOiA2MCU7XHJcbn1cclxuXHJcbi5jYXJkLXVpIHtcclxuICB3aWR0aDogMThyZW07XHJcbiAgaGVpZ2h0OiAyMHJlbTtcclxuICBib3JkZXItcmFkaXVzOiAyMHB4O1xyXG4gIG1hcmdpbjogMiU7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogb3JhbmdlO1xyXG59XHJcblxyXG4uY2FyZC11aS1hIHtcclxuICBmb250LWZhbWlseTogZmFudGFzeTtcclxuICBjb2xvcjogYmxhY2s7XHJcbiAgbWFyZ2luOiAyJTtcclxufVxyXG5cclxuLnRpdGxlIHtcclxuICBmb250LXNpemU6IDcwcHg7XHJcbiAgZm9udC1mYW1pbHk6IGZhbnRhc3k7XHJcbiAgY29sb3I6IG9yYW5nZTtcclxufSJdLCJzb3VyY2VSb290IjoiIn0= */"]
+});
+
+/***/ }),
+
+/***/ 4431:
+/*!*********************!*\
+  !*** ./src/main.ts ***!
+  \*********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/platform-browser */ 4497);
+/* harmony import */ var _app_app_module__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./app/app.module */ 6747);
+
+
+_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__.platformBrowser().bootstrapModule(_app_app_module__WEBPACK_IMPORTED_MODULE_0__.AppModule).catch(err => console.error(err));
+
+/***/ })
+
+},
+/******/ __webpack_require__ => { // webpackRuntimeModules
+/******/ var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
+/******/ __webpack_require__.O(0, ["vendor"], () => (__webpack_exec__(1211), __webpack_exec__(4431)));
+/******/ var __webpack_exports__ = __webpack_require__.O();
+/******/ }
+]);
+//# sourceMappingURL=main.js.map

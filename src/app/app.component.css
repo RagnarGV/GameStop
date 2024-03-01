@@ -1,0 +1,45 @@
+.navbar {
+    background-color: orange;
+}
+
+li {
+    color: red;
+}
+
+a {
+    color: red;
+}
+
+li :hover {
+    color: black;
+}
+
+nav {
+    font-weight: bold;
+}
+
+.submit{
+    font-weight: bold;
+    color: orange;
+    background-color: black;
+    border-radius: 20px;
+    border: 2px solid orange;
+    box-shadow: 2px 5px rgb(106, 70, 3);
+  }
+  .submit:hover{
+    font-weight: bold;
+    color: black;
+    background-color: orange;
+    border-radius: 20px;
+    border: 2px solid black;
+    box-shadow: 2px 5px rgb(106, 70, 3);
+  }
+.footer {
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    background-color: orange;
+}
+
+body {
+    background-color: black;
+}

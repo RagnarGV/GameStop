@@ -1,0 +1,56 @@
+.carousel .carousel-item {
+    height: 600px;
+  }
+  
+  .carousel-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 600px;
+  }
+  
+  #item {
+    transition: all 0.5s ease-out;
+    background: #fff;
+    color: #000;
+  }
+  
+  .hovered {
+    background: #000 !important;
+    color: #fff !important;
+  }
+  
+  .zoom {
+    /* background-color: green; */
+    transition: transform .2s;
+    /* width: 18rem; */
+    height: 15rem;
+    /* margin: 0 auto; */
+    border-radius: 20px;
+  }
+  
+  .zoom:hover {
+    -ms-transform: scale(1.2);
+    /* IE 9 */
+    -webkit-transform: scale(1.2);
+    /* Safari 3-8 */
+    transform: scale(1.2);
+  }
+  
+  body {
+    background-color: black;
+  }
+  
+  .card-ui {
+    width: 18rem;
+   
+    border-radius: 20px;
+    margin: 2%;
+    background-color: orange;
+  }
+  
+  .title {
+    font-size: 70px;
+    font-family: fantasy;
+    color: orange;
+  }

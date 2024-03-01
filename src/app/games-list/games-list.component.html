@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game-list</title>
+</head>
+
+<body>
+    <div class="modal fade" id="gameDetails" tabindex="-1" role="dialog" data-backdrop="false"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title" id="exampleModalLabel">{{gameName}}</h1>
+                    <button type="button" class="close" data-dismiss="modal" (click)="close()" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-8">
+                            <video src="{{gameVideo}}" style="border-radius: 20px;" class="d-block w-100" controls
+                                autoplay loop>
+                            </video>
+                        </div>
+                        <div class="col-4">
+                            <img class="modal-image" src="{{gameImage}}">
+                            <div style="margin: 10%;">
+                                <p>{{gameDesc}}</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer-ui">
+                    <div align="center">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal"
+                            (click)="close()">Close</button>
+                    </div>
+
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div align="center">
+        <h1 class="title">{{categoryName}}</h1>
+    </div>
+
+    <section
+        style="margin-left: 9%;margin-right: 9%; margin-top: 2%; margin-bottom: 5%; padding: 1%; border: 2px solid orange; border-radius: 20px;">
+
+        <div style="margin: auto;max-width: 92%;">
+            <div class="row">
+                <a (click)="getName('CyberPunk 2077')" href="#" class="card-ui-a" data-toggle="modal"
+                    data-target="#gameDetails">
+                    <div class="card card-ui card-zoom">
+                        <img class="zoom" onmouseenter="this.src='assets/Gamepics/1.jpg'"
+                            onmouseleave="this.src='assets/Gamepics/2.jpg'" src="assets/Gamepics/2.jpg">
+                        <div class="card-body">
+                            <p class="card-text">CyberPunk 2077</p>
+                        </div>
+                    </div>
+                </a>
+                <a (click)="getName('Assetto Corsa Competizione')" href="#" class="card-ui-a" data-toggle="modal"
+                    data-target="#gameDetails">
+                    <div class="card card-ui card-zoom">
+                        <img class="zoom" onmouseenter="this.src='assets/Gamepics/3.jpg'"
+                            onmouseleave="this.src='assets/Gamepics/4.jpg'" src="assets/Gamepics/4.jpg">
+                        <div class="card-body">
+                            <p id="gamename" class="card-text">Assetto Corsa Competizione</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a (click)="getName('Resident Evil 4')" href="#" class="card-ui-a" data-toggle="modal"
+                    data-target="#gameDetails">
+                    <div class="card card-ui card-zoom">
+                        <img class="zoom" onmouseenter="this.src='assets/Gamepics/6.webp'"
+                            onmouseleave="this.src='assets/Gamepics/5.jpg'" src="assets/Gamepics/5.jpg">
+                        <div class="card-body">
+                            <p class="card-text">Resident Evil 4</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a (click)="getName('GTA V')" href="#" class="card-ui-a" data-toggle="modal" data-target="#gameDetails">
+                    <div class="card card-ui card-zoom">
+                        <img class="zoom" onmouseenter="this.src='assets/Gamepics/8.jpg'"
+                            onmouseleave="this.src='assets/Gamepics/7.jpg'" src="assets/Gamepics/7.jpg">
+                        <div class="card-body">
+                            <p class="card-text">GTA V</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a (click)="getName('Need For Speed™ Unbound')" href="#" class="card-ui-a" data-toggle="modal"
+                    data-target="#gameDetails">
+                    <div class="card card-ui card-zoom">
+                        <img class="zoom" onmouseenter="this.src='assets/Gamepics/10.jpg'"
+                            onmouseleave="this.src='assets/Gamepics/9.png'" src="assets/Gamepics/9.png">
+                        <div class="card-body">
+                            <p class="card-text">Need For Speed™ Unbound</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a (click)="getName('Apex Legends™')" href="#" class="card-ui-a" data-toggle="modal"
+                    data-target="#gameDetails">
+                    <div class="card card-ui card-zoom">
+                        <img class="zoom" onmouseenter="this.src='assets/Gamepics/12.jpg'"
+                            onmouseleave="this.src='assets/Gamepics/11.png'" src="assets/Gamepics/11.png">
+                        <div class="card-body">
+                            <p class="card-text">Apex Legends™</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a (click)="getName('Forza Horizon 5')" href="#" class="card-ui-a" data-toggle="modal"
+                    data-target="#gameDetails">
+                    <div class="card card-ui card-zoom">
+                        <img class="zoom" onmouseenter="this.src='assets/Gamepics/13.png'"
+                            onmouseleave="this.src='assets/Gamepics/14.jpg'" src="assets/Gamepics/14.jpg">
+                        <div class="card-body">
+                            <p class="card-text">Forza Horizon 5</p>
+                        </div>
+                    </div>
+                </a>
+                <a (click)="getName('The Last of Us™ Part I')" href="#" class="card-ui-a" data-toggle="modal"
+                    data-target="#gameDetails">
+                    <div class="card card-ui card-zoom">
+                        <img class="zoom" onmouseenter="this.src='assets/Gamepics/15.jpg'"
+                            onmouseleave="this.src='assets/Gamepics/16.jpg'" src="assets/Gamepics/16.jpg">
+                        <div class="card-body">
+                            <p class="card-text">The Last of Us™ Part I</p>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+
+
+    </section>
+</body>
+
+</html>
