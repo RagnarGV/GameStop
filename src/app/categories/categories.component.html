@@ -1,108 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div align="center">
-        <h1 class="title">Categories</h1>
+      <h1 class="title">Categories</h1>
     </div>
 
     <section
-        style="margin-left: 10%;margin-right: 10%; margin-top: 2%;padding-top: 3%;padding-bottom: 3%; padding-right: 1%; padding-left: 1%; border: 2px solid orange; border-radius: 20px;">
-        <div style="margin: auto;max-width: 92%;">
-            <div class="row">
-                <a href="" [routerLink]="['/game-list','Role Playing']" style="margin: 2%;">
-                    <div class="card zoom" style="width: 18rem; border-radius: 20px; margin: 2%;">
-                        <img class="zoom"
-                            src="https://store.steampowered.com/categories/homepageimage/category/rpg?cc=us&l=english">
-                        <div class="gradient" style="background: linear-gradient(rgba(0,0,0,0), rgb(139,0,0) 100%);">
-                        </div>
-                        <div class="label_ctn"><span class="label">Role Playing</span></div>
-                    </div>
-                </a>
-
-                <a href="" [routerLink]="['/game-list','Adventure']" style="margin: 2%;">
-                    <div class="card zoom" style="width: 18rem; border-radius: 20px; margin: 2%;">
-                        <img class="zoom"
-                            src="https://store.steampowered.com/categories/homepageimage/category/adventure?cc=us&l=english">
-                        <div class="gradient" style="background: linear-gradient(rgba(0,0,0,0), rgb(0, 97, 139) 100%);">
-                        </div>
-                        <div class="label_ctn"><span class="label">Adventure</span></div>
-                    </div>
-                </a>
-
-                <a href="" [routerLink]="['/game-list','Story-Rich']" style="margin: 2%;">
-                    <div class="card zoom" style="width: 18rem; border-radius: 20px; margin: 2%;">
-                        <img class="zoom"
-                            src="https://store.steampowered.com/categories/homepageimage/category/story_rich?cc=us&l=english">
-                        <div class="gradient" style="background: linear-gradient(rgba(0,0,0,0), rgb(0, 139, 39) 100%);">
-                        </div>
-                        <div class="label_ctn"><span class="label">Story-Rich</span></div>
-                    </div>
-                </a>
-
-                <a href="" [routerLink]="['/game-list','Action']" style="margin: 2%;">
-                    <div class="card zoom" style="width: 18rem; border-radius: 20px; margin: 2%;">
-                        <img class="zoom"
-                            src="https://store.steampowered.com/categories/homepageimage/category/action?cc=us&l=english">
-                        <div class="gradient"
-                            style="background: linear-gradient(rgba(0,0,0,0), rgb(113, 0, 139) 100%);">
-                        </div>
-                        <div class="label_ctn"><span class="label">Action</span></div>
-                    </div>
-                </a>
-
-                <a href="" [routerLink]="['/game-list','Racing']" style="margin: 2%;">
-                    <div class="card zoom" style="width: 18rem; border-radius: 20px; margin: 2%;">
-                        <img class="zoom"
-                            src="https://store.steampowered.com/categories/homepageimage/category/racing?cc=us&l=english">
-                        <div class="gradient"
-                            style="background: linear-gradient(rgba(0,0,0,0), rgb(134, 139, 0) 100%);">
-                        </div>
-                        <div class="label_ctn"><span class="label">Racing</span></div>
-                    </div>
-                </a>
-
-                <a href="" [routerLink]="['/game-list','Survival']" style="margin: 2%;">
-                    <div class="card zoom" style="width: 18rem; border-radius: 20px; margin: 2%;">
-                        <img class="zoom"
-                            src="https://store.steampowered.com/categories/homepageimage/category/survival?cc=us&l=english">
-                        <div class="gradient" style="background: linear-gradient(rgba(0,0,0,0), rgb(87, 85, 58) 100%);">
-                        </div>
-                        <div class="label_ctn"><span class="label">Survival</span></div>
-                    </div>
-                </a>
-
-                <a href="" [routerLink]="['/game-list','Free-to-play']" style="margin: 2%;">
-                    <div class="card zoom" style="width: 18rem; border-radius: 20px; margin: 2%;">
-                        <img class="zoom"
-                            src="https://store.steampowered.com/categories/homepageimage/freetoplay?cc=us&l=english">
-                        <div class="gradient" style="background: linear-gradient(rgba(0,0,0,0), rgb(6, 3, 44) 100%);">
-                        </div>
-                        <div class="label_ctn"><span class="label">Free-to-play</span></div>
-                    </div>
-                </a>
-
-                <a href="" [routerLink]="['/game-list','Anime']" style="margin: 2%;">
-                    <div class="card zoom" style="width: 18rem; border-radius: 20px;">
-                        <img class="zoom"
-                            src="https://store.steampowered.com/categories/homepageimage/category/anime?cc=us&l=english">
-                        <div class="gradient" style="background: linear-gradient(rgba(0,0,0,0), rgb(108, 7, 37) 100%);">
-                        </div>
-                        <div class="label_ctn"><span class="label">Anime</span></div>
-                    </div>
-                </a>
-
+      style="
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 2%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        padding-right: 1%;
+        padding-left: 1%;
+        border: 2px solid orange;
+        border-radius: 20px;
+      "
+    >
+      <div style="margin: auto; max-width: 92%">
+        <div class="row">
+          <a
+            href=""
+            [routerLink]="['/game-list', 'Role Playing']"
+            style="margin: 2%"
+          >
+            <div
+              class="card zoom"
+              style="width: 18rem; border-radius: 20px; margin: 2%"
+            >
+              <img
+                class="zoom"
+                src="https://store.steampowered.com/categories/homepageimage/category/rpg?cc=us&l=english"
+              />
+              <div
+                class="gradient"
+                style="
+                  background: linear-gradient(
+                    rgba(0, 0, 0, 0),
+                    rgb(139, 0, 0) 100%
+                  );
+                "
+              ></div>
+              <div class="label_ctn">
+                <span class="label">Role Playing</span>
+              </div>
             </div>
+          </a>
+
+          <a
+            href=""
+            [routerLink]="['/game-list', 'Adventure']"
+            style="margin: 2%"
+          >
+            <div
+              class="card zoom"
+              style="width: 18rem; border-radius: 20px; margin: 2%"
+            >
+              <img
+                class="zoom"
+                src="https://store.steampowered.com/categories/homepageimage/category/adventure?cc=us&l=english"
+              />
+              <div
+                class="gradient"
+                style="
+                  background: linear-gradient(
+                    rgba(0, 0, 0, 0),
+                    rgb(0, 97, 139) 100%
+                  );
+                "
+              ></div>
+              <div class="label_ctn"><span class="label">Adventure</span></div>
+            </div>
+          </a>
+
+          <a
+            href=""
+            [routerLink]="['/game-list', 'Story-Rich']"
+            style="margin: 2%"
+          >
+            <div
+              class="card zoom"
+              style="width: 18rem; border-radius: 20px; margin: 2%"
+            >
+              <img
+                class="zoom"
+                src="https://store.steampowered.com/categories/homepageimage/category/story_rich?cc=us&l=english"
+              />
+              <div
+                class="gradient"
+                style="
+                  background: linear-gradient(
+                    rgba(0, 0, 0, 0),
+                    rgb(0, 139, 39) 100%
+                  );
+                "
+              ></div>
+              <div class="label_ctn"><span class="label">Story-Rich</span></div>
+            </div>
+          </a>
+
+          <a href="" [routerLink]="['/game-list', 'Action']" style="margin: 2%">
+            <div
+              class="card zoom"
+              style="width: 18rem; border-radius: 20px; margin: 2%"
+            >
+              <img
+                class="zoom"
+                src="https://store.steampowered.com/categories/homepageimage/category/action?cc=us&l=english"
+              />
+              <div
+                class="gradient"
+                style="
+                  background: linear-gradient(
+                    rgba(0, 0, 0, 0),
+                    rgb(113, 0, 139) 100%
+                  );
+                "
+              ></div>
+              <div class="label_ctn"><span class="label">Action</span></div>
+            </div>
+          </a>
+
+          <a href="" [routerLink]="['/game-list', 'Racing']" style="margin: 2%">
+            <div
+              class="card zoom"
+              style="width: 18rem; border-radius: 20px; margin: 2%"
+            >
+              <img
+                class="zoom"
+                src="https://store.steampowered.com/categories/homepageimage/category/racing?cc=us&l=english"
+              />
+              <div
+                class="gradient"
+                style="
+                  background: linear-gradient(
+                    rgba(0, 0, 0, 0),
+                    rgb(134, 139, 0) 100%
+                  );
+                "
+              ></div>
+              <div class="label_ctn"><span class="label">Racing</span></div>
+            </div>
+          </a>
+
+          <a
+            href=""
+            [routerLink]="['/game-list', 'Survival']"
+            style="margin: 2%"
+          >
+            <div
+              class="card zoom"
+              style="width: 18rem; border-radius: 20px; margin: 2%"
+            >
+              <img
+                class="zoom"
+                src="https://store.steampowered.com/categories/homepageimage/category/survival?cc=us&l=english"
+              />
+              <div
+                class="gradient"
+                style="
+                  background: linear-gradient(
+                    rgba(0, 0, 0, 0),
+                    rgb(87, 85, 58) 100%
+                  );
+                "
+              ></div>
+              <div class="label_ctn"><span class="label">Survival</span></div>
+            </div>
+          </a>
+
+          <a
+            href=""
+            [routerLink]="['/game-list', 'Free-to-play']"
+            style="margin: 2%"
+          >
+            <div
+              class="card zoom"
+              style="width: 18rem; border-radius: 20px; margin: 2%"
+            >
+              <img
+                class="zoom"
+                src="https://store.steampowered.com/categories/homepageimage/freetoplay?cc=us&l=english"
+              />
+              <div
+                class="gradient"
+                style="
+                  background: linear-gradient(
+                    rgba(0, 0, 0, 0),
+                    rgb(6, 3, 44) 100%
+                  );
+                "
+              ></div>
+              <div class="label_ctn">
+                <span class="label">Free-to-play</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="" [routerLink]="['/game-list', 'Anime']" style="margin: 2%">
+            <div class="card zoom" style="width: 18rem; border-radius: 20px">
+              <img
+                class="zoom"
+                src="https://store.steampowered.com/categories/homepageimage/category/anime?cc=us&l=english"
+              />
+              <div
+                class="gradient"
+                style="
+                  background: linear-gradient(
+                    rgba(0, 0, 0, 0),
+                    rgb(108, 7, 37) 100%
+                  );
+                "
+              ></div>
+              <div class="label_ctn"><span class="label">Anime</span></div>
+            </div>
+          </a>
         </div>
+      </div>
     </section>
-
-</body>
-
+  </body>
 </html>
